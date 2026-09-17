@@ -1,0 +1,15 @@
+export const auth = {
+  "auth.meta.title": "Masuk — SmartLab",
+  "auth.aria.home": "Kembali ke beranda SmartLab",
+  "auth.eyebrow": "Akses aman",
+  "auth.title": "Selamat datang kembali.",
+  "auth.description": "Masuk untuk mengakses dashboard pemantauan SmartLab.",
+  "auth.email": "Email",
+  "auth.password": "Kata sandi",
+  "auth.login": "Masuk",
+  "auth.signingIn": "Sedang masuk...",
+  "auth.error.invalid": "Email atau kata sandi tidak valid.",
+  "auth.error.network": "Tidak dapat terhubung ke layanan autentikasi. Coba kembali beberapa saat lagi.",
+  "auth.error.notConfigured": "Autentikasi belum dikonfigurasi. Hubungi administrator SmartLab.",
+  "auth.footnote": "Ruang kerja pemantauan SmartLab",
+} as const;

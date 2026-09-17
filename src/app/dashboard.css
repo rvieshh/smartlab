@@ -1,0 +1,27 @@
+/* Trend metric selector --------------------------------------------------- */
+.metric-selector {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--sl-border-default);
+}
+
+.metric-selector__button {
+  height: 34px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0 14px;
+  background: transparent;
+  color: var(--sl-text-muted);
+  font-family: var(--font-geist-sans);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.metric-selector__button:hover { color: var(--sl-text-primary); }
+.metric-selector__button--active { color: var(--sl-text-primary); border-bottom-color: var(--sl-accent); }
+
+@media (max-width: 480px) {
+  .metric-selector__button { padding: 0 10px; font-size: 0.75rem; }
+}

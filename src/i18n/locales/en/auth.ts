@@ -1,0 +1,15 @@
+export const auth = {
+  "auth.meta.title": "Login — SmartLab",
+  "auth.aria.home": "Back to SmartLab home",
+  "auth.eyebrow": "Secure access",
+  "auth.title": "Welcome back.",
+  "auth.description": "Sign in to access the SmartLab monitoring dashboard.",
+  "auth.email": "Email",
+  "auth.password": "Password",
+  "auth.login": "Login",
+  "auth.signingIn": "Signing in...",
+  "auth.error.invalid": "Invalid email or password.",
+  "auth.error.network": "Unable to reach authentication. Please try again shortly.",
+  "auth.error.notConfigured": "Authentication is not configured. Contact the SmartLab administrator.",
+  "auth.footnote": "SmartLab monitoring workspace",
+} as const;
