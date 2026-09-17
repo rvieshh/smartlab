@@ -24,7 +24,13 @@ export function LoginForm() {
       const supabase = createClient();
       if (!supabase) { setError(t("auth.error.notConfigured")); return; }
       const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
-      if (authError) { setError(t("auth.error.invalid")); return; }
+      if (authError) {
+        const errorCode = "code" in authError ? authError.code : undefined;
+        if (errorCode === "email_not_confirmed" || authError.message.toLowerCase().includes("email not confirmed")) setError(t("auth.error.emailNotConfirmed"));
+        else if (authError.status === 429) setError(t("auth.error.rateLimited"));
+        else setError(t("auth.error.invalid"));
+        return;
+      }
       router.replace("/dashboard");
       router.refresh();
     } catch {

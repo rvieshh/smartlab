@@ -9,6 +9,8 @@ export const auth = {
   "auth.login": "Masuk",
   "auth.signingIn": "Sedang masuk...",
   "auth.error.invalid": "Email atau kata sandi tidak valid.",
+  "auth.error.emailNotConfirmed": "Konfirmasi alamat email terlebih dahulu sebelum masuk.",
+  "auth.error.rateLimited": "Terlalu banyak percobaan masuk. Tunggu sebentar lalu coba lagi.",
   "auth.error.network": "Tidak dapat terhubung ke layanan autentikasi. Coba kembali beberapa saat lagi.",
   "auth.error.notConfigured": "Autentikasi belum dikonfigurasi. Hubungi administrator SmartLab.",
   "auth.footnote": "Ruang kerja pemantauan SmartLab",

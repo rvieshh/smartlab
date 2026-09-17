@@ -9,6 +9,8 @@ export const auth = {
   "auth.login": "Login",
   "auth.signingIn": "Signing in...",
   "auth.error.invalid": "Invalid email or password.",
+  "auth.error.emailNotConfirmed": "Confirm your email address before signing in.",
+  "auth.error.rateLimited": "Too many sign-in attempts. Wait a moment and try again.",
   "auth.error.network": "Unable to reach authentication. Please try again shortly.",
   "auth.error.notConfigured": "Authentication is not configured. Contact the SmartLab administrator.",
   "auth.footnote": "SmartLab monitoring workspace",
